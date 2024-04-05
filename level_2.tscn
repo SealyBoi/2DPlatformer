@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://dj54jtnu3rim6"]
+
+[ext_resource type="PackedScene" uid="uid://blg018chvnmyh" path="res://main_camera.tscn" id="1_3s8cg"]
+[ext_resource type="PackedScene" uid="uid://xlkh2l1ij56a" path="res://player.tscn" id="2_c1s1k"]
+[ext_resource type="PackedScene" uid="uid://cm5jox8qjsmrp" path="res://floor.tscn" id="3_yx1a3"]
+[ext_resource type="PackedScene" uid="uid://cc1d41v2efaxi" path="res://door.tscn" id="4_30snc"]
+
+[node name="Level2" type="Node2D"]
+
+[node name="Camera2D" parent="." instance=ExtResource("1_3s8cg")]
+
+[node name="Player" parent="." instance=ExtResource("2_c1s1k")]
+
+[node name="Floor" parent="." instance=ExtResource("3_yx1a3")]
+
+[node name="Floor2" parent="." instance=ExtResource("3_yx1a3")]
+position = Vector2(690, 385)
+
+[node name="Floor3" parent="." instance=ExtResource("3_yx1a3")]
+position = Vector2(1542, 181)
+
+[node name="Floor4" parent="." instance=ExtResource("3_yx1a3")]
+position = Vector2(2308, 559)
+
+[node name="Door" parent="." instance=ExtResource("4_30snc")]
+position = Vector2(2455, 475)
+next_level = "main"
